@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- *int main(void) for run program
- *print the sentence
- *puts for printing
- *return 0 for the end
- */
+*main - Main function of my project
+*
+*
+*Return: return 0 everytime
+*/
 int main(void)
 {
 /*this print the sentence*/
