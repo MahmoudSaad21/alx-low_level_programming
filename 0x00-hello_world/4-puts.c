@@ -1,5 +1,7 @@
 #include <stdio.h>
-/*print the sentence*/
+/**
+ *print the sentence
+ */
 int main(void)
 {
 /*this print the sentence*/
