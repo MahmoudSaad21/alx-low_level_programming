@@ -1,6 +1,9 @@
 #include <stdio.h>
 /**
+ *main for run program
  *print the sentence
+ *puts for printing 
+ *return 0 for the end
  */
 int main(void)
 {
