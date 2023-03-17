@@ -9,9 +9,6 @@
 */
 int main(void)
 {
-int c;
-for (c = 0; c <= 9; c++)
-putchar(c);
-putchar('\n');
+printf("0123456789\n");
 return (0);
 }
