@@ -10,14 +10,16 @@
 int main(void)
 {
 int ch1, ch2;
-for (ch1 = '0'; ch1 <= '9'; ch1++)
+for (ch1 = 0; ch1 <= 98; ch1++)
 {
-for (ch2 = '0'; ch2 <= '9'; ch2++)
-if (ch1 < ch2)
+for (ch2 = ch1 + 1; ch2 <= 99; ch2++)
 {
-putchar(ch1);
-putchar(ch2);
-if (ch1 != '8')
+putchar((ch1 / 10) + '0');
+putchar((ch1 % 10) + '0');
+putchar(' ');
+putchar((ch2 / 10) + '0');
+putchar((ch2 % 10) + '0');
+if (ch1 / 10 != 9 || ch1 % 10 != 8)
 {
 putchar(',');
 putchar(' ');
