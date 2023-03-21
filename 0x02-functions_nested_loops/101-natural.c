@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * add - return the sum
@@ -8,6 +7,15 @@
  */
 int main(void)
 {
-printf("%d\n",244293);
+int n, sum = 0;
+for (n = 0; n < 1024; n = n + 3)
+{
+sum += n;
+}
+for (n = 0; n < 1024; n = n + 5)
+{
+sum += n;
+}
+printf("%d \n", sum);
 return (0);
 }
