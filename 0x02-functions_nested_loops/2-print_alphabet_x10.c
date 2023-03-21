@@ -13,7 +13,6 @@ for (count1 = 0; count1 <= 9; count1++)
 {
 for (count = 'a'; count <= 'z'; count++)
 _putchar(count);
- 
 _putchar(10);
 }
 }
