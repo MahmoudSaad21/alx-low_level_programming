@@ -21,7 +21,9 @@ _putchar(58);
 _putchar(count3 + 48);
 _putchar(count4 + 48);
 _putchar(10);
-}
+if (count1 == 2 && count2 ==3)
+return;
+} 
 }
 }
 }
