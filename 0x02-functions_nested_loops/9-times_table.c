@@ -15,7 +15,7 @@ int temp = count1 * count2;
 if (temp < 10 )
 {
 _putchar(temp + '0');
-if (count2 < 9)
+ if (count1 *(1 + count2) < 9)
 {
 _putchar(',');
 _putchar(' ');
