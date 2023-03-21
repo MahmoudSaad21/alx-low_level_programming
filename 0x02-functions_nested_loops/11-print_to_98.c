@@ -11,7 +11,7 @@ if (c >= 98)
 {
 for (count = c ;count <= 98;count++)
 {
-_putchar(temp + '0');
+_putchar(count + '0');
 _putchar(',');
 _putchar(' ');
 }
@@ -21,7 +21,7 @@ else
 {
 for (count = c ;count >= 98;count--)
 {
-_putchar(temp + '0');
+_putchar(count + '0');
 _putchar(',');
 _putchar(' ');
 }
