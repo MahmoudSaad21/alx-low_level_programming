@@ -11,7 +11,7 @@ for (count1 = 0; count1 <= 9 ; count1++)
 {
 for (count2 = 0; count2 <= 9 ; count2++)
 {
-int temp = count1 * count2
+int temp = count1 * count2;
 if (temp < 10 )
 {
 _putchar(temp + '0');
