@@ -11,20 +11,20 @@ if (c <= 98)
 {
 for (count = c ;count <= 98;count++)
 {
-_putchar(count + '0');
-_putchar(',');
-_putchar(' ');
+printf(count);
+printf(',');
+printf(' ');
 }
-_putchar(10);
+printf("\n");
 }
 else
 {
 for (count = c ;count >= 98;count--)
 {
-_putchar(count + '0');
-_putchar(',');
-_putchar(' ');
+printf(count);
+printf(',');
+printf(' ');
 }
-_putchar(10);
+printf("\n");
 }
 }
