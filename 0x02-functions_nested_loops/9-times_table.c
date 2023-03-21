@@ -15,22 +15,17 @@ int temp = count1 * count2;
 if (temp < 10 )
 {
 _putchar(temp + '0');
- if (count1 *(1 + count2) < 9)
-{
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
-}
+
 }
 else
 {
 _putchar((temp / 10) + '0');
 _putchar((temp % 10) + '0');
-if (count2 < 9)
-{
 _putchar(',');
 _putchar(' ');
-}
 }
 }
 _putchar(10);
