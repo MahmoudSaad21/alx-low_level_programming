@@ -23,7 +23,7 @@ _putchar(count4 + 48);
 _putchar(10);
 if (count1 == 2 && count2 == 3 && count3 == 5 && count4 == 9)
 return;
-} 
+}
 }
 }
 }
