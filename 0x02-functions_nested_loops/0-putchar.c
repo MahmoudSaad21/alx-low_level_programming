@@ -1,6 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
 /**
 *main - Main function of my project
 *
@@ -9,6 +7,12 @@
 */
 int main(void)
 {
-printf("_putchar\n");
+char text[10] = "_putchar";
+int count;
+for (count = 0; count < 8; i++)
+{
+_putchar(text[count]);
+}
+_putchar(10);
 return (0);
 }
