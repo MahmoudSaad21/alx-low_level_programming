@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-*_abs return the absolute
-*@c: character to be verified
-*Return: return 0 or c or -c
-*/
+ *_abs - return the absolute
+ *@c: character to be verified
+ *Return: return 0 or c or -c
+ */
 int _abs(int c)
 {
 if (c == 0)
