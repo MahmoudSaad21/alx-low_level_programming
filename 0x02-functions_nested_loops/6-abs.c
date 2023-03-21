@@ -4,7 +4,7 @@
 *@c: character to be verified
 *Return: return 0 or c or -c
 */
-int print_sign(int c)
+int _abs(int c)
 {
 if (c == 0)
 {
