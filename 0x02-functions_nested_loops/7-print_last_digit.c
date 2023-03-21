@@ -7,10 +7,10 @@
 int print_last_digit(int c)
 {
 int temp;
-if (c < 0)  
-temp = -1*(c%10);
+if (c < 0)
+temp = -1 * (c % 10);
 else
-temp = (c%10);   
-_putchar(temp+48);
+temp = (c % 10);
+_putchar(temp + 48);
 return (temp);
 }
