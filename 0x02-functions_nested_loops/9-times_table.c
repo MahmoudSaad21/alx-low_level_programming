@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * jack_bauer - return the last digit
+ * times_table - return the last digit
  *
  * Return: return 0 or c or -c
  */
-void jack_bauer(void)
+void times_table(void)
 {
 int count1, count2;
 for (count1 = 0; count1 <= 9 ; count1++)
