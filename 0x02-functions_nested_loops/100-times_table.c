@@ -15,12 +15,22 @@ for (count2 = 1; count2 <= n ; count2++)
 int temp = count1 * count2;
 _putchar(',');
 _putchar(' ');
+if (temp <= 99)
+_putchar(' ');
+
 if (temp <= 9)
 _putchar(' ');
-else
-_putchar((temp / 10) + '0');
-_putchar((temp % 10) + '0');
+if (temp >= 100)
+{
+_putchar((temp / 100) + '0');
+_putchar((temp / 10) % 10 + '0');
 }
+else if (temp <= 99 && temp >= 10)
+{
+_putchar((temp / 10) + '0');
+}
+_putchar((temp % 10) + '0');
+ }
 _putchar(10);
 }
 }
