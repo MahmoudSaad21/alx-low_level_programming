@@ -1,5 +1,5 @@
 #include "main.h"
-/**
+11;rgb:0000/0000/0000/**
 *main - Main function of my project
 *
 *
@@ -12,6 +12,6 @@ for (count = 'a'; count <= 'z'; count++)
 {
 _putchar(count);
 }
-_putchar("\n");
+_putchar(10);
 return (0);
 }
