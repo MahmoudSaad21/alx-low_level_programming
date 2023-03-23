@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* print_line - function that print numbers 10 times
+* print_line - prints a straight line
 *@n: a number
-*Return: return 0 everytime
+*Return: return nothing
 */
 void print_line(int n)
 {
