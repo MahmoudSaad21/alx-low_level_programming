@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-*print_alphabet_x10 - function that print alphabet 10 times
+*print_numbers - function that print alphabet 10 times
 *
 *
 *Return: return 0 everytime
 */
-void print_alphabet_x10(void)
+void print_numbers(void)
 {
 int count1;
 for (count1 = 0; count1 <= 9; count1++)
