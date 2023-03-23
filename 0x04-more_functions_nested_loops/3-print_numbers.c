@@ -9,6 +9,6 @@ void print_alphabet_x10(void)
 {
 int count1;
 for (count1 = 0; count1 <= 9; count1++)
-_putchar(count);
+_putchar(count1);
 _putchar(10);
 }
