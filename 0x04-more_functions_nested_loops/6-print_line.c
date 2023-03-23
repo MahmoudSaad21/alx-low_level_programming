@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * print_line - function that print numbers 10 times
-*
+*@n: a number
 *Return: return 0 everytime
 */
 void print_line(int n)
