@@ -11,7 +11,7 @@ if (s > 0)
 {
 for (count1 = 1; count1 <= s; count1++)
 {
-for ((count = size - count1); count > 0; count--)
+for ((count = s - count1); count > 0; count--)
 _putchar(' ');
 
 for (count = 0; count < count1; count++)
