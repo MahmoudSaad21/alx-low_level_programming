@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* main -  prints a square
+*main -  prints a square
 *
 *Return: return nothing
 */
@@ -18,6 +18,7 @@ else if (count1 % 5 == 0 )
 printf("Buzz");
 else
 printf("%d", count1);
+if(count1 != 100)
 printf(" ");
 }
 printf("\n");
