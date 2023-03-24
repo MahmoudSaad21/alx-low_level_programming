@@ -18,8 +18,8 @@ else if (count1 % 5 == 0 )
 printf("Buzz");
 else
 printf(count1);
-printf(" ")
+printf(" ");
 }
 _putchar(10);
-return (0)
+return (0);
 }
