@@ -1,11 +1,12 @@
 #include "main.h"
 /**
 * print_number -  prints a number
-* @n: is the number
+* @num: is the number
 * Return: void
 */
-void print_number(int n)
+void print_number(int num)
 {
+int n = num;
 if (n < 0)
 {
 _putchar('-');
