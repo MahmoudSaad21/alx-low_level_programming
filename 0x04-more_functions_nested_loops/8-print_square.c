@@ -11,7 +11,7 @@ if (s > 0)
 {
 for (count1 = 1; count1 <= s; count1++)
 {
-for (count = s; count <= count1; count++)
+for (count = 1; count <= s; count++)
 {
 _putchar(35);
 }
