@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <math.h>
 /**
 * print_number -  prints a number
 * @n: is the number
@@ -11,7 +9,7 @@ void print_number(int n)
 if (n < 0)
 {
 _putchar('-');
-n = -n;
+n = - n;
 }
 if (n / 10)
 {
