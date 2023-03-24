@@ -20,6 +20,6 @@ else
 printf("%d", count1);
 printf(" ");
 }
-_putchar(10);
+printf("\n");
 return (0);
 }
