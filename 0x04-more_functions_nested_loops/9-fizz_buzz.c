@@ -17,7 +17,7 @@ printf("Fizz");
 else if (count1 % 5 == 0 )
 printf("Buzz");
 else
-printf(count1);
+printf("%d", count1);
 printf(" ");
 }
 _putchar(10);
