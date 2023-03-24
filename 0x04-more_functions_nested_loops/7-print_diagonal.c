@@ -13,9 +13,9 @@ for (count1 = 1; count1 <= n; count1++)
 {
 for (count = 1; count <= count1; count++)
 {
-_putchar(" ");
+_putchar(32);
 }
-_putchar("\\");
+_putchar(92);
 _putchar(10);
 }
 }
