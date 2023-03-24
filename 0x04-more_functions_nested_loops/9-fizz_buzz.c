@@ -9,20 +9,28 @@
 */
 int main(void)
 {
-int count1;
-for (count1 = 1; count1 <= 100; count1++)
+int num;
+for (num = 1; num <= 100; num++)
+
+if ((num % 3 == 0) && (num % 5 == 0))
+printf("FizzBuzz ");
+
+else if ((num % 3) == 0)
+printf("Fizz ");
+
+else if ((num % 5) == 0)
 {
-if ((count1 % 3 == 0) && (count1 % 5 == 0))
-printf("FizzBuzz");
-else if ((count1 % 3) == 0)
-printf("Fizz");
-else if (count1 % 5 == 0)
-printf("Buzz");
+if (num != 100)
+printf("Buzz ");
+
 else
-printf("%d", count1);
-if(count1 != 100)
-printf(" ");
+printf("Buzz");
 }
+
+else
+printf("%d ", num);
+
+
 printf("\n");
 return (0);
 }
