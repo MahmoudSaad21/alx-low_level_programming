@@ -13,4 +13,3 @@ for (count = len - 1; count >= 0; count--)
 _putchar(s[count]);
 _putchar(10);
 }
-}
