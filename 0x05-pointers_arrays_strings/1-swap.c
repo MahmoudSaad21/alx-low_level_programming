@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*reset_to_98 - reset value of an integer to 98
+*swap_int - swap two numbers
 *@a: first number
 *@b: second number
 *Return : nothing
