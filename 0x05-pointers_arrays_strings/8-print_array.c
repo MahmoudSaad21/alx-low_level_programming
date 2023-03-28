@@ -2,7 +2,7 @@
 /**
 *print_array -  prints every other character of a string
 *@a: first num
-*@b: first num
+*@n: first num
 *Return: nothing
 */
 void print_array(int *a, int n)
