@@ -9,6 +9,7 @@ void puts2(char *s)
 int len = 0;
 while (s[len] != '\0')
 {
+if (len % 2 == 0)
 _putchar(s[len]);
 len++;
 }
