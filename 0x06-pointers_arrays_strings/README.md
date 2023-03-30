@@ -1,0 +1,1 @@
+this is 8th about pointers_arrays_strings
