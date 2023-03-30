@@ -13,7 +13,7 @@ while (dest[dest_len] != '\0')
 dest_len++;
 while (src[index] != '\0')
 {
-dest[dest_len + index] = src[i];
+dest[dest_len + index] = src[index];
 index++;
 }
 dest[dest_len + index] = '\0';
