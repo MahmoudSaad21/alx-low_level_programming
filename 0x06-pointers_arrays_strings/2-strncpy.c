@@ -8,7 +8,7 @@
 */
 char *_strncay(char *dest, char *src, int n)
 {
-int index = 0
+int index = 0;
 for (index = 0; src[index] != '\0' && index < n; index++)
 dest[index] = src[index];
 while (index < n)
