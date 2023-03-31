@@ -6,7 +6,7 @@
 */
 char *string_toupper(char *str)
 {
-int tmp = 0, index = 0;
+int index = 0;
 for (index = 0; str[index] != '\0'; index++)
 {
 if (str[index] >= 'a' && str[index] <= 'z')
