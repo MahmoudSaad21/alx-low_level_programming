@@ -7,17 +7,17 @@
  */
 char *rot13(char *str)
 {
-char *result = (char *)malloc(strlen(str) + 1);
-    int i;
-    for (i = 0; str[i] != '\0'; i++) {
-        if (str[i] >= 'a' && str[i] <= 'z') {
-            result[i] = (((str[i] - 'a') + 13) % 26) + 'a';
-        } else if (str[i] >= 'A' && str[i] <= 'Z') {
-            result[i] = (((str[i] - 'A') + 13) % 26) + 'A';
-        } else { 
-	    result[i] = str[i];
-        }
-    }
-    result[i] = '\0';
-    return (result);
+int i, j;
+char c;
+char *result = str;
+for (i = 0; str[i] != '\0'; i++)
+{
+c = str[i];
+if (c >= 'a' && c <= 'z') 
+c = 'a' + ((c - 'a' + 13) % 26);
+else if (c >= 'A' && c <= 'Z')
+c = 'A' + ((c - 'A' + 13) % 26);
+result[i] = c;
+}
+return (result);
 }
