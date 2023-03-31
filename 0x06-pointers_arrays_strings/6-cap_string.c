@@ -9,7 +9,7 @@ char *cap_string(char *str)
 int index = 0;
 while (str[index] != '\0')
 {
-if (i = 0 || str[index - 1] == ' ' ||
+if (index = 0 || str[index - 1] == ' ' ||
 str[index - 1] == '\t' ||
 str[index - 1] == '\n' ||
 str[index - 1] == ',' ||
