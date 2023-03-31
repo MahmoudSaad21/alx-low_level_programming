@@ -6,7 +6,7 @@
 */
 char *cap_string(char *str)
 {
-int i = 0;
+int index = 0;
 while (str[index] != '\0')
 {
 if (i = 0 || str[index - 1] == ' ' ||
