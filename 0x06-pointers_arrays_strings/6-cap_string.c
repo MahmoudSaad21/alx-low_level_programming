@@ -22,7 +22,7 @@ str[index - 1] == '(' ||
 str[index - 1] == ')' ||
 str[index - 1] == '{' ||
 str[index - 1] == '}')
-str[index] -= 32;
+str[index] = str[index] - 'a' + 'A';
 index++;
 }
 return (str);
