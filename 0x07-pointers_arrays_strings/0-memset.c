@@ -1,10 +1,12 @@
 #include "main.h"
 /**
-*_memset - fills memory with a constant byte
-*@s: the array
-*@b: string to complete with
-*@n: the number
-*Return: returns new concatenated string
+*_memset - The _memset() function fills
+* the first n bytes of the memory area
+* pointed to by s with the constant byte b
+*@s:target
+*@b: constant byte
+*@n:number of byte
+*Return: returns new value of target
 */
 char *_memset(char *s, char b, unsigned int n)
 {
