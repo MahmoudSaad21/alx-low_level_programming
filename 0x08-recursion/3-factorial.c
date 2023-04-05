@@ -9,5 +9,7 @@ int factorial(int n)
 int i = 1;
 if (n != 0)
 i = i * factorial(n - 1);
+else
+return (1);
 return (i);
 }
