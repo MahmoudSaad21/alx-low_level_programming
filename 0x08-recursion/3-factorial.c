@@ -4,7 +4,7 @@
 *@n:target
 *Return: returns the factorial
 */
-int factorial(int n);
+int factorial(int n)
 {
 int i = 1;
 if (n != 0)
