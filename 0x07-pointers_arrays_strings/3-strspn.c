@@ -12,13 +12,15 @@ int i = 0, j = 0;
 unsigned int n = 0;
 while (s[i] != '\0')
 {
-while(accept[j] != '\0')
+while (accept[j] != '\0')
 {
 if (accept[j] == s[i])
 {
 n++;
 break;
 }
+else if ((accept[j + 1]) == '\0')
+return (n);
 j++;
 }
 i++;
