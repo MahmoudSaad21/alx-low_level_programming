@@ -14,7 +14,7 @@ while (s[i] != '\0')
 {
 while(accept[j] != '\0')
 {
-if (accept[j] == c)
+if (accept[j] == s[i])
 {
 n++;
 break;
