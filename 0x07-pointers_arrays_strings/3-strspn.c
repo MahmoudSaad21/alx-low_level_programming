@@ -20,6 +20,8 @@ if (accept[j] == s[i])
 n++;
 break;
 }
+else if ((accept[i + 1]) == '\0')
+return (bytes);
 j++;
 }
 i++;
