@@ -21,7 +21,7 @@ break;
 }
 j++;
 }
-i++
+i++;
 }
 return (n);
 }
