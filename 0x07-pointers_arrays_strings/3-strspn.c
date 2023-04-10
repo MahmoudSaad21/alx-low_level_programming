@@ -20,7 +20,7 @@ if (accept[j] == s[i])
 n++;
 break;
 }
-else if ((accept[i + 1]) == '\0')
+else if ((accept[j + 1]) == '\0')
 return (n);
 j++;
 }
