@@ -8,7 +8,6 @@
 *Return:Returns a pointer to the beginning of the located
 * substring, or NULL if the substring is not found.
 */
-
 char *_strstr(char *haystack, char *needle)
 {
 int i = 0, j;
@@ -16,8 +15,7 @@ while (haystack[i] != '\0')
 {
 j = 0;
 if (haystack[i] == needle[j])
-do
-{
+do {
 if (needle[j + 1] == '\0')
 return (haystack[j]);
 j++;
