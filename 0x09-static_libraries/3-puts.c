@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 *_puts - length of stri
-*@s: first string
+*@str: first string
 *Return: nothing
 */
 void _puts(char *str)
