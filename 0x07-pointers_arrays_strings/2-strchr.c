@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-*_strchr - copy the constant byte b
+*_strchr - copy the constant byte
 *@s:target
-*@c: constant byte
+*@c:constant byte
 *Return: returns new value of target
 */
 char *_strchr(char *s, char c)
