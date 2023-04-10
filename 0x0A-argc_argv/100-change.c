@@ -9,7 +9,7 @@
 */
 int main(int argc, char *argv[])
 {
-  int ce = 0, ch = 0, temp = 0;
+int ce = 0, ch = 0, temp = 0;
 if (argc < 2)
 {
 printf("Error\n");
@@ -20,7 +20,7 @@ if (atoi(argv[1]) <= 0)
 printf("0\n");
 return (0);
 }
-ce = atoi(argv[1])
+ce = atoi(argv[1]);
 ch = ch + ce%25;
 temp = ce/25;
 ce = ce - (temp*25);
