@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include <stdio.h>
 /**
 *strtow - splits a stirng into words
 *@str: string to be splitted
