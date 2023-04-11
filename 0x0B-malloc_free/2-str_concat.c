@@ -18,6 +18,7 @@ for (i = 0; s1[i]; i++)
 len++;
 for (i = 0; s2[i]; i++)
 len++;
+len++;
 str = malloc(sizeof(char) * len);
 if (str == NULL)
 return (NULL);
