@@ -17,8 +17,9 @@ return (NULL);
 for (i = 0; i < height; i++)
 {
 array[i] = (int *)calloc(width, sizeof(int));
-if (array[i] == NULL) {
-for (j = 0; j < i; j++)
+if (array[i] == NULL)
+{
+for (j = 0; j <= i; j++)
 free(array[j]);
 free(array);
 return (NULL);
