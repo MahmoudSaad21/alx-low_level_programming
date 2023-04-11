@@ -36,7 +36,6 @@ break;
 word_start = p;
 while (*p && !isspace(*p))
 p++;
-}
 word_length = p - word_start;
 word = (char *)malloc((word_length + 1) * sizeof(char));
 if (word == NULL)
