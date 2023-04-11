@@ -12,7 +12,7 @@ int **array;
 int i, j;
 if (width <= 0 || height <= 0)
 return (NULL);
-array = (int **)malloc(height * sizeof(int *));
+array = malloc(height * sizeof(int *));
 if (array == NULL)
 {
 free(array);
@@ -20,7 +20,7 @@ return (NULL);
 }
 for (i = 0; i < height; i++)
 {
-array[i] = (int *)calloc(width, sizeof(int));
+array[i] = calloc(width, sizeof(int));
 if (array[i] == NULL)
 {
 for (j = 0; j <= i; j++)
