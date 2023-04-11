@@ -14,16 +14,7 @@ int word_count = 0, i = 0, word_length, j;
 char *p, *word_start, *word, **words;
 if (str == NULL || *str == '\0')
 return (NULL);
-for (p = str; *p; p++)
-{
-if (isspace(*p))
-continue;
-word_count++;
-while (*p && !isspace(*p))
-p++;
-if (!*p)
-break;
-}
+word_count = find_word_count(str, word_count);
 if (word_count == 0)
 return (NULL);
 words = (char **)malloc((word_count + 1) * sizeof(char *));
@@ -51,4 +42,19 @@ words[i] = word;
 }
 words[i] = NULL;
 return (words);
+}
+
+int find_word_count(char *str, int word_count)
+{
+for (p = str; *p; p++)
+{
+if (isspace(*p))
+continue;
+word_count++;
+while (*p && !isspace(*p))
+p++;
+if (!*p)
+break;
+}
+return (word_count);
 }
