@@ -14,7 +14,7 @@ char *p, *word_start, *word;
 char **words;
 if (str == NULL || *str == '\0')
 return (NULL);
-for (*p = str; *p; p++)
+for (p = str; *p; p++)
 {
 if (isspace(*p))
 continue;
@@ -27,18 +27,18 @@ break;
 words = (char **)malloc((word_count + 1) * sizeof(char *));
 if (words == NULL)
 return (NULL);
-for (*p = str; *p; i++)
+for (p = str; *p; i++)
 {
 while (*p && isspace(*p))
 p++;
 if (!*p)
 break;
-*word_start = p;
+word_start = p;
 while (*p && !isspace(*p))
 p++;
 }
 word_length = p - word_start;
-*word = (char *)malloc((word_length + 1) * sizeof(char));
+word = (char *)malloc((word_length + 1) * sizeof(char));
 if (word == NULL)
 {
 for (j = 0; j < i; j++)
