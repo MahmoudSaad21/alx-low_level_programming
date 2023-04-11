@@ -12,7 +12,7 @@ char **strtow(char *str)
 {
 int word_count = 0, i = 0, word_length, j;
 char *p, *word_start, *word, **words;
-if (str == NULL|| *str == ' ' || *str == '\0')
+if (str == NULL || *str == '\0')
 return (NULL);
 for (p = str; *p; p++)
 {
@@ -24,9 +24,9 @@ p++;
 if (!*p)
 break;
 }
-words = (char **)malloc((word_count + 1) * sizeof(char *));
-if (words == NULL)
+if (word_count == 0)
 return (NULL);
+words = (char **)malloc((word_count + 1) * sizeof(char *));
 for (p = str; *p; i++)
 {
 while (*p && isspace(*p))
