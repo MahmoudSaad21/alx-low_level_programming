@@ -10,10 +10,11 @@
 char **strtow(char *str)
 {
 int word_count = 0, i = 0, word_length, j;
-char *p, *word_start, *word;
-char **words;
+char *p, *word_start, *word, **words;
 if (str == NULL || *str == '\0')
 return (NULL);
+if(*str == " ")
+printf("Failed\n");
 for (p = str; *p; p++)
 {
 if (isspace(*p))
