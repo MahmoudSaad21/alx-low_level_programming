@@ -43,7 +43,12 @@ words[i] = word;
 words[i] = NULL;
 return (words);
 }
-
+/**
+* find_word_count - find the number of the words in the input
+*@str: string to be splitted
+*@word_count: the number of the words
+*Return: the count
+*/
 int find_word_count(char *str, int word_count)
 {
 char *p;
