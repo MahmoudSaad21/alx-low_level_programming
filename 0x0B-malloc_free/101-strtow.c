@@ -46,6 +46,7 @@ return (words);
 
 int find_word_count(char *str, int word_count)
 {
+char *p;
 for (p = str; *p; p++)
 {
 if (isspace(*p))
