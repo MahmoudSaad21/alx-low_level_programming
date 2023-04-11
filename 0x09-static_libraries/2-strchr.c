@@ -1,16 +1,21 @@
 #include "main.h"
+#include <stddef.h>
 /**
-*_memcpy - copy the constant byte b
-*@dest:target
-*@src: constant byte
-*@n:number of byte
+*_strchr - copy the constant byte
+*@s:target
+*@c:constant byte
 *Return: returns new value of target
 */
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_strchr(char *s, char c)
 {
-unsigned int i;
-
-for (i = 0; i < n; i++)
-dest[i] = src[i];
-return (dest);
+int i = 0;
+while (s[i] != '\0')
+{
+if (s[i] == c)
+return (s + i);
+i++;
+}
+if (s[i] == c)
+return (s + i);
+return (NULL);
 }
