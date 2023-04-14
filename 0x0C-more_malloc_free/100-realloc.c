@@ -31,7 +31,7 @@ if (temp != NULL)
 return (NULL);
 else
 {
-for (index = 0; i < min(old_size, new_size); i++)
+for (index = 0; index < min(old_size, new_size); index++)
 *((char *)temp + index) = *((char *) ptr + index);
 free(ptr);
 return (temp);
