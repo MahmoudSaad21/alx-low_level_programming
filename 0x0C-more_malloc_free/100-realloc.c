@@ -16,6 +16,7 @@ unsigned int index;
 if (ptr == NULL)
 {
 temp = malloc(new_size);
+if (temp == NULL)
 return (temp);
 }
 else if (new_size == old_size)
@@ -35,14 +36,14 @@ else
 if (old_size < new_size)
 {
 for (index = 0; index < old_size; index++)
-*((char *)temp + index) = *((char *) ptr + index);
+temp[index] = *((char *)ptr + index);
 free(ptr);
 return (temp);
 }
 else
 {
 for (index = 0; index < new_size; index++)
-*((char *)temp + index) = *((char *) ptr + index);
+temp[index] = *((char *) ptr + index);
 free(ptr);
 return (temp);
 }
