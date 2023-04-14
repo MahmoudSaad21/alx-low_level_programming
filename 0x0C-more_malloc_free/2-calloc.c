@@ -18,7 +18,7 @@ if (temp == NULL)
 return (NULL);
 else
 {
-for (index = 0; index < (nmemb * size); index++
+for (index = 0; index < (nmemb * size); index++)
 temp[index] = 0;
 return (temp);
 }
