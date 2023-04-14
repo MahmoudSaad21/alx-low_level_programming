@@ -14,12 +14,12 @@ unsigned int index;
 if (nmemb == 0 || size == 0)
 return (NULL);
 temp = malloc(nmemb * size);
-if (temp != NULL)
+if (temp == NULL)
+return (NULL);
+else
 {
-for (index = 0; index < (nmemb * size); index++)
+for (index = 0; index < (nmemb * size); index++
 temp[index] = 0;
 return (temp);
 }
-else
-return (NULL);
 }
