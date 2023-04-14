@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
 *string_nconcat - Concatenates two strings using at
 *most an inputted number of bytes.
