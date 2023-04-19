@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* main - Prints the result
-* @argc: The number of arguments
-* @argv: An array.
-* Return:
+*main - Prints the result
+*@argc: The number of arguments
+*@argv: An array.
+*Return: 0
 */
 
 int main(int __attribute__((__unused__)) argc, char *argv[])
