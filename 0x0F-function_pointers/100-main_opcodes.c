@@ -22,7 +22,11 @@ printf("Error\n");
 return (2);
 }
 for (i = 0; i < n; i++)
-printf("%02x ", *(p + i));
+{
+printf("%02x", *(p + i));
+if (i < n - 1)
+printf(" ");
+}
 printf("\n");
 return (0);
 }
