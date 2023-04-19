@@ -24,5 +24,5 @@ return (2);
 for (i = 0; i < n; i++)
 printf("%02x ", *(p + i));
 printf("\n");
-return 0;
+return (0);
 }
