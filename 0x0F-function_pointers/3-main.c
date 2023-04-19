@@ -25,11 +25,11 @@ if (get_op_func(op) == NULL)
 printf("Error\n");
 exit(99);
 }
-if ((*op == '/' && num2 == 0) || (*op == '%' && num2 == 0))
+if ((*op == '/' && n2 == 0) || (*op == '%' && n2 == 0))
 {
 printf("Error\n");
 exit(100);
 }
-printf("%d\n", get_op_func(op)(num1, num2));
+printf("%d\n", get_op_func(op)(n1, n2));
 return (0);
 }
