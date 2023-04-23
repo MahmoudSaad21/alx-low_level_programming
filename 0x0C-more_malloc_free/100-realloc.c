@@ -29,7 +29,7 @@ return (NULL);
 else
 {
 temp = malloc(new_size);
-if (temp != NULL)
+if (temp == NULL)
 return (NULL);
 else
 {
