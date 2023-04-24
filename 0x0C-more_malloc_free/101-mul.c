@@ -122,6 +122,5 @@ int main(int argc, char **argv)
     }
 
     printf("%s\n", res);
-    free(res);
     return (0);
 }
