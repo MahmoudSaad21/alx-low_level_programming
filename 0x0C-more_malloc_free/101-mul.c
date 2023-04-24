@@ -20,10 +20,10 @@ i++;
 return (1);
 }
 /**
-*main - program that multiplies two positive numbers.
-*@ac: the number of arg
-*@av: the arg
-*Return: If the number of arguments is incorrect exit with a status of 98
+*main - multiplies two positive numbers
+*@argc: the number of arguments passed to the program
+*@argv: an array of strings containing the arguments
+*Return: 0 on success, 98 on error
 */
 int main(int argc, char **argv)
 {
@@ -38,21 +38,25 @@ return (98);
 len1 = strlen(argv[1]);
 len2 = strlen(argv[2]);
 len_result = len1 + len2;
-result = calloc(len_result, sizeof(char));
+result = calloc(len_result + 1, sizeof(char));
 if (result == NULL)
 return (1);
+for (i = 0; i < len_result; i++)
+{
+result[i] = '0';
+}
 for (i = len1; i > 0; i--)
 {
 carry = 0;
 for (j = len2; j > 0; j--)
 {
-carry += (argv[1][i - 1] - '0') * (argv[2][j - 1] - '0') + result[i + j - 1] - '0';
-result[i + j - 1] = (carry % 10) + '0';
+carry += (argv[1][i - 1] - '0') * (argv[2][j - 1] - '0') + (result[i + j] - '0');
+result[i + j] = (carry % 10) + '0';
 carry /= 10;
 }
-result[i + j - 1] = carry + '0';
+result[i + j] = (carry % 10) + '0';
 }
-while (*result == '0')
+while (*result == '0' && *(result + 1) != '\0')
 result++;
 printf("%s\n", result);
 free(result);
