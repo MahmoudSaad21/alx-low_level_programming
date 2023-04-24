@@ -11,7 +11,7 @@
 int main(int ac, char *av[])
 {
 unsigned long mul, num1, num2;
-int i = 0, j = 0,num1, num2;
+int i = 0, j = 0;
 if (ac != 3)
 {
 printf("Error\n");
