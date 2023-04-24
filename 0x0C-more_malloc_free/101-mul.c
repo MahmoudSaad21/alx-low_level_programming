@@ -10,7 +10,7 @@
 */
 int main(int ac, char *av[])
 {
-int mul;
+unsigned long mul, num1, num2;
 int i = 0, j = 0,num1, num2;
 if (ac != 3)
 {
@@ -31,6 +31,6 @@ exit(98);
 num1 = atol(av[1]);
 num2 = atol(av[2]);
 mul = num1 * num2;
-printf("%d\n%d\n%d", mul + 3,num2,num2+5);
+printf("%lu\n%lu\n%lu", mul + 3,num2,num2+5);
 return (0);
 }
