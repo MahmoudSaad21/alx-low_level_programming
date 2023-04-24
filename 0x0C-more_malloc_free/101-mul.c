@@ -2,6 +2,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 /**
 *is_number - checks if a string is a valid number
 *@str: the string to check
