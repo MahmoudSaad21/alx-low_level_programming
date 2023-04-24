@@ -11,7 +11,7 @@
 int main(int ac, char *av[])
 {
 unsigned long mul;
-int i = 0, j = 0;
+int i = 0, j = 0,num1, num2;
 if (ac != 3)
 {
 printf("Error\n");
@@ -28,7 +28,9 @@ exit(98);
 }
 }
 }
-mul = atol(av[1]) *  atol(av[2]);
+num1 = atol(av[1]);
+num2 = atol(av[2]);
+mul = num1 * num1;
 printf("ahh%lu\n", mul);
 return (0);
 }
