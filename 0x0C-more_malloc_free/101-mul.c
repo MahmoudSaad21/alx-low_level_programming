@@ -28,7 +28,7 @@ exit(98);
 }
 }
 }
-mul = atol(av[1]) *  atol(av[2]);
+mul = atol(av[1]);
 printf("ahh%lu\n", mul);
 return (0);
 }
