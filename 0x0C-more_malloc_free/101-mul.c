@@ -30,7 +30,7 @@ exit(98);
 }
 num1 = atol(av[1]);
 num2 = atol(av[2]);
-mul = num1 * num1;
-printf("ahh%d\n", mul);
+mul = num1 * num2;
+printf("%d\n", mul);
 return (0);
 }
