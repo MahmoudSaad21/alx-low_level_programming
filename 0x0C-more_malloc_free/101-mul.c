@@ -59,6 +59,5 @@ result[i + j] = (carry % 10) + '0';
 while (*result == '0' && *(result + 1) != '\0')
 result++;
 printf("%s\n", result);
-free(result);
 return (0);
 }
