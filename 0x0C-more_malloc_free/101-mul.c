@@ -29,6 +29,6 @@ exit(98);
 }
 }
 mul = atol(av[1]) *  atol(av[2]);
-printf("%lu\n", mul);
+printf("ahh%lu\n", mul);
 return (0);
 }
