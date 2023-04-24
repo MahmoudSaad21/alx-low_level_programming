@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
 /**
  * _isdigit - checks if a character is a digit
  * @c: the character to check
