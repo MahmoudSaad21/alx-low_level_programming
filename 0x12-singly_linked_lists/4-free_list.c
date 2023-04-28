@@ -14,7 +14,7 @@ while (head != NULL)
 {
 current_node = head;
 head = head->next;
-free(current_node->data);
+free(current_node->str);
 free(current_node);
 }
 }
