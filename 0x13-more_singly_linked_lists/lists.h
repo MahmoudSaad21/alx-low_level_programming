@@ -1,5 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <stdio.h>
+#include <stddef.h>
 /**
  * struct listint_s - singly linked list
  * @n: integer
