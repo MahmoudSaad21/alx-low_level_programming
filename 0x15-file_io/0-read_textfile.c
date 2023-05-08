@@ -23,7 +23,7 @@ return (0);
 }
 bytes_read = read(f, buf, letters);
 bytes_written = write(STDOUT_FILENO, buf, bytes_read);
-if (bytes_read == -1 ||bytes_written == -1 || bytes_written != bytes_read)
+if (bytes_read == -1 || bytes_written == -1 || bytes_written != bytes_read)
 {
 free(buf);
 close(f);
