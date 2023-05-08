@@ -7,7 +7,7 @@
 *_97 - error 97
 *Return: nothing
 */
-void _97()
+void _97(void)
 {
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97);
