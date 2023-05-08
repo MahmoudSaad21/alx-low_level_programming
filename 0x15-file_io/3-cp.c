@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 int fd_from, fd_to, read_size, write_size;
 char buffer[1024];
 if (argc != 3)
-_97(argv);
+_97();
 fd_from = open(argv[1], O_RDONLY);
 if (fd_from == -1)
 _98(argv);
