@@ -15,9 +15,10 @@ exit(98);
 }
 void print_elf_header(const Elf64_Ehdr *header)
 {
+int i = 0;
 printf("ELF Header:\n");
 printf("  Magic:   ");
-for (int i = 0; i < EI_NIDENT; i++)
+for (i = 0; i < EI_NIDENT; i++)
 printf("%02x ", header->e_ident[i]);
 printf("\n");
 printf("  Class:                             %s\n", header->e_ident[EI_CLASS] == ELFCLASS64 ? "ELF64" : "unknown");
@@ -37,16 +38,16 @@ printf("\n");
 */
 int main(int argc, char **argv)
 {
+int fd = open(argv[1], O_RDONLY);
+char buffer[64];
+Elf64_Ehdr *header = (Elf64_Ehdr *) buffer;
+long unsigned int bytes_read = read(fd, buffer, 64);
 if (argc != 2)
 print_error("Usage: elf_header elf_filename");
-int fd = open(argv[1], O_RDONLY);
 if (fd < 0)
 print_error("Cannot open file");
-char buffer[64];
-int bytes_read = read(fd, buffer, 64);
 if (bytes_read < sizeof(Elf64_Ehdr))
 print_error("Invalid ELF file");
-Elf64_Ehdr *header = (Elf64_Ehdr *) buffer;
 if (memcmp(header->e_ident, ELFMAG, SELFMAG) != 0)
 print_error("Invalid ELF file");
 print_elf_header(header);
