@@ -5,10 +5,9 @@
 #include <errno.h>
 /**
 *_97 - error 97
-*@argv: An array of pointers to the arguments
 *Return: nothing
 */
-void _97 ()
+void _97(void)
 {
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97);
@@ -18,7 +17,7 @@ exit(97);
 *@argv: An array of pointers to the arguments
 *Return: nothing
 */
-void _98 (char *argv[])
+void _98(char *argv[])
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
@@ -28,7 +27,7 @@ exit(98);
 *@argv: An array of pointers to the arguments
 *Return: nothing
 */
-void _99 (char *argv[])
+void _99(char *argv[])
 {
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99);
@@ -38,7 +37,7 @@ exit(99);
 *@fd: the file
 *Return: nothing
 */
-void _100 (int fd)
+void _100(int fd)
 {
 dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 exit(100);
