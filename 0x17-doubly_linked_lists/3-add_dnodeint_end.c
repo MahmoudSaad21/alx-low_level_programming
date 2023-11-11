@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * add_dnodeint_end - adds a new node at the end
  * of a dlistint_t list
@@ -24,7 +23,7 @@ while (h->next != NULL)
 h = h->next;
 h->next = new;
 }
- else
+else
 *head = new;
 new->prev = h;
 return (new);
