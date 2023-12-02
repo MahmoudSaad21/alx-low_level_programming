@@ -35,7 +35,7 @@ new_node->key = strdup(key);
 if (new_node->key == NULL)
 {
 free(new_node);
-return (0)
+return (0);
 }
 
 new_node->value = strdup(value);
